@@ -1,0 +1,8 @@
+view,N,n_pairs,n_count_rows
+tab1,100000,28,188053
+tab2_eq,100000,21,38277
+tab2_pulse,100000,21,25859
+tab3_plant,40000,28,47602
+tab3_winner,40000,28,50911
+tab4_plant,40000,28,47848
+tab4_winner,40000,28,65362

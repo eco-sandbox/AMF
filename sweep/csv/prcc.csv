@@ -1,0 +1,58 @@
+design,response,par,symbol,prcc
+tab1,MGR,S,"soil P, S",-0.034
+tab1,MGR,L,"light, L",0.048
+tab1,MGR,Amax,A_max,0.057
+tab1,MGR,Y,Y,0.077
+tab1,MGR,theta,θ,0.079
+tab1,MGR,Kr,K_r,0.128
+tab1,MGR,c,colonisation c,-0.736
+tab1,MGR,phi,φ,0.157
+tab1,MGR,kappa,C cost κ,-0.655
+tab1,MGR,rho,root suppression ρ,-0.254
+tab1,MGR,Kf,K_f,-0.123
+tab1,MGR,U0,fungal P need U_0,-0.165
+tab1,MGR,n,n,-0.011
+tab2_eq,lnEq,K,fertility K_P,-0.782
+tab2_eq,lnEq,r,r,0.743
+tab2_eq,lnEq,g,γ,0.084
+tab2_eq,lnEq,a,a_M,-0.718
+tab2_eq,lnEq,b,b_M,-0.723
+tab2_eq,lnEq,d,d_M,0.754
+tab2_eq,lnEq,e,e_M,0.868
+tab2_pulse,J12,K,fertility K_P,-0.231
+tab2_pulse,J12,r,r,-0.369
+tab2_pulse,J12,g,γ,-0.028
+tab2_pulse,J12,a,a_M,-0.404
+tab2_pulse,J12,b,b_M,0.377
+tab2_pulse,J12,d,d_M,-0.406
+tab2_pulse,J12,e,e_M,-0.537
+tab3_plant,lnH,K,fertility K_P,-0.564
+tab3_plant,lnH,r,r,0.516
+tab3_plant,lnH,g,γ,0.038
+tab3_plant,lnH,g2,γ_Z,0.008
+tab3_plant,lnH,a1,a_M,-0.272
+tab3_plant,lnH,a2,a_Z,-0.266
+tab3_plant,lnH,b1,b_M,-0.282
+tab3_plant,lnH,b2,b_Z,-0.29
+tab3_plant,lnH,d1,d_M,0.312
+tab3_plant,lnH,d2,d_Z,0.31
+tab3_plant,lnH,e1,e_M,0.431
+tab3_plant,lnH,e2,e_Z,0.424
+tab3_plant,lnH,c1,α_MZ,0.014
+tab3_plant,lnH,c2,α_ZM,0.016
+tab4_plant,lnH,K,fertility K_P,-0.564
+tab4_plant,lnH,r,r,0.524
+tab4_plant,lnH,g,γ,0.034
+tab4_plant,lnH,g2,γ_Z,0.004
+tab4_plant,lnH,a1,a_M,-0.282
+tab4_plant,lnH,a2,a_Z,-0.255
+tab4_plant,lnH,b1,b_M,-0.276
+tab4_plant,lnH,b2,b_Z,-0.286
+tab4_plant,lnH,d1,d_M,0.311
+tab4_plant,lnH,d2,d_Z,0.304
+tab4_plant,lnH,e1,e_M,0.444
+tab4_plant,lnH,e2,e_Z,0.395
+tab4_plant,lnH,c1,α_MZ,-0.011
+tab4_plant,lnH,c2,α_ZM,0.033
+tab4_plant,lnH,s,sanction s,0.018
+tab4_plant,lnH,q0,q_0,-0.016

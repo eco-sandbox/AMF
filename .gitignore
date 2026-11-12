@@ -1,0 +1,24 @@
+# R
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Renviron
+*.Rproj
+
+# OS / editor
+.DS_Store
+*~
+.*.swp
+
+# Shinylive local exports (CI builds these; they are not committed)
+_site/
+export_src/
+shinylive_site/
+
+# Sweep raw samples (tens of MB each; rebuild with sweep/run_sweep.R)
+sweep/csv/samples_*.csv
+sweep/*.log
+
+# Local zips
+*.zip

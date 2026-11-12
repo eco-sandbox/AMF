@@ -1,0 +1,69 @@
+mid,pct,what,model
+0.75,10.7142857142857,mutualism,U_0 sampled (0–0.8)
+1.25,11.4285714285714,mutualism,U_0 sampled (0–0.8)
+1.75,11.4149821640904,mutualism,U_0 sampled (0–0.8)
+2.5,11.540749553837,mutualism,U_0 sampled (0–0.8)
+3.5,10.291493158834,mutualism,U_0 sampled (0–0.8)
+4.5,7.85714285714286,mutualism,U_0 sampled (0–0.8)
+5.5,9.75609756097561,mutualism,U_0 sampled (0–0.8)
+7,6.90270752752157,mutualism,U_0 sampled (0–0.8)
+9,6.15888128533175,mutualism,U_0 sampled (0–0.8)
+11.5,5.11701705672352,mutualism,U_0 sampled (0–0.8)
+14.5,4.62026571485227,mutualism,U_0 sampled (0–0.8)
+18,3.64474858673014,mutualism,U_0 sampled (0–0.8)
+22.5,3.07033202427704,mutualism,U_0 sampled (0–0.8)
+27.5,2.37981913374584,mutualism,U_0 sampled (0–0.8)
+35,2.02308699274069,mutualism,U_0 sampled (0–0.8)
+45,1.9990480723465,mutualism,U_0 sampled (0–0.8)
+55,1.57086754730453,mutualism,U_0 sampled (0–0.8)
+0.75,42.8571428571429,mutualism,"same sets, U_0 = 0"
+1.25,34.2857142857143,mutualism,"same sets, U_0 = 0"
+1.75,31.15338882283,mutualism,"same sets, U_0 = 0"
+2.5,26.7697798929209,mutualism,"same sets, U_0 = 0"
+3.5,21.832242712671,mutualism,"same sets, U_0 = 0"
+4.5,20.4166666666667,mutualism,"same sets, U_0 = 0"
+5.5,18.6793575252826,mutualism,"same sets, U_0 = 0"
+7,13.9541803034811,mutualism,"same sets, U_0 = 0"
+9,12.9128235644154,mutualism,"same sets, U_0 = 0"
+11.5,10.9083696945657,mutualism,"same sets, U_0 = 0"
+14.5,9.26036089629189,mutualism,"same sets, U_0 = 0"
+18,7.91431121689973,mutualism,"same sets, U_0 = 0"
+22.5,6.37867428299417,mutualism,"same sets, U_0 = 0"
+27.5,5.28319847691576,mutualism,"same sets, U_0 = 0"
+35,4.46864215161252,mutualism,"same sets, U_0 = 0"
+45,4.06949071870538,mutualism,"same sets, U_0 = 0"
+55,3.34999404974414,mutualism,"same sets, U_0 = 0"
+0.75,69.6428571428571,parasitism,U_0 sampled (0–0.8)
+1.25,67.0238095238095,parasitism,U_0 sampled (0–0.8)
+1.75,65.0416171224733,parasitism,U_0 sampled (0–0.8)
+2.5,64.2474717430101,parasitism,U_0 sampled (0–0.8)
+3.5,65.2587745389649,parasitism,U_0 sampled (0–0.8)
+4.5,69.0476190476191,parasitism,U_0 sampled (0–0.8)
+5.5,64.5449137418203,parasitism,U_0 sampled (0–0.8)
+7,67.6584349895864,parasitism,U_0 sampled (0–0.8)
+9,67.4204105920857,parasitism,U_0 sampled (0–0.8)
+11.5,67.4335581118604,parasitism,U_0 sampled (0–0.8)
+14.5,67.5589926630974,parasitism,U_0 sampled (0–0.8)
+18,68.2088664088069,parasitism,U_0 sampled (0–0.8)
+22.5,68.8444603117934,parasitism,U_0 sampled (0–0.8)
+27.5,69.3717277486911,parasitism,U_0 sampled (0–0.8)
+35,69.5287397358086,parasitism,U_0 sampled (0–0.8)
+45,70.1749167063303,parasitism,U_0 sampled (0–0.8)
+55,70.0761632750208,parasitism,U_0 sampled (0–0.8)
+0.75,35.5952380952381,parasitism,"same sets, U_0 = 0"
+1.25,42.3809523809524,parasitism,"same sets, U_0 = 0"
+1.75,44.4708680142687,parasitism,"same sets, U_0 = 0"
+2.5,47.412254610351,parasitism,"same sets, U_0 = 0"
+3.5,50.9815585960738,parasitism,"same sets, U_0 = 0"
+4.5,54.8809523809524,parasitism,"same sets, U_0 = 0"
+5.5,53.4205829863177,parasitism,"same sets, U_0 = 0"
+7,58.8812853317465,parasitism,"same sets, U_0 = 0"
+9,59.4763463254984,parasitism,"same sets, U_0 = 0"
+11.5,60.650535501785,parasitism,"same sets, U_0 = 0"
+14.5,61.3325401546698,parasitism,"same sets, U_0 = 0"
+18,62.6747991669146,parasitism,"same sets, U_0 = 0"
+22.5,63.9890515292158,parasitism,"same sets, U_0 = 0"
+27.5,64.7905759162304,parasitism,"same sets, U_0 = 0"
+35,65.6015708675473,parasitism,"same sets, U_0 = 0"
+45,66.3850547358401,parasitism,"same sets, U_0 = 0"
+55,66.8273235749137,parasitism,"same sets, U_0 = 0"

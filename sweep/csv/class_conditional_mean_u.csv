@@ -1,0 +1,329 @@
+design,class,par,symbol,mean_u
+tab1,mutualism,S,"soil P, S",0.325
+tab1,mutualism,L,"light, L",0.634
+tab1,mutualism,Amax,A_max,0.68
+tab1,mutualism,Y,Y,0.682
+tab1,mutualism,theta,θ,0.701
+tab1,mutualism,Kr,K_r,0.741
+tab1,mutualism,c,colonisation c,0.55
+tab1,mutualism,phi,φ,0.679
+tab1,mutualism,kappa,C cost κ,0.441
+tab1,mutualism,rho,root suppression ρ,0.359
+tab1,mutualism,Kf,K_f,0.358
+tab1,mutualism,U0,fungal P need U_0,0.309
+tab1,mutualism,n,n,0.503
+tab1,commensalism,S,"soil P, S",0.51
+tab1,commensalism,L,"light, L",0.497
+tab1,commensalism,Amax,A_max,0.497
+tab1,commensalism,Y,Y,0.497
+tab1,commensalism,theta,θ,0.496
+tab1,commensalism,Kr,K_r,0.5
+tab1,commensalism,c,colonisation c,0.265
+tab1,commensalism,phi,φ,0.513
+tab1,commensalism,kappa,C cost κ,0.321
+tab1,commensalism,rho,root suppression ρ,0.466
+tab1,commensalism,Kf,K_f,0.493
+tab1,commensalism,U0,fungal P need U_0,0.486
+tab1,commensalism,n,n,0.497
+tab1,parasitism,S,"soil P, S",0.505
+tab1,parasitism,L,"light, L",0.494
+tab1,parasitism,Amax,A_max,0.492
+tab1,parasitism,Y,Y,0.492
+tab1,parasitism,theta,θ,0.492
+tab1,parasitism,Kr,K_r,0.488
+tab1,parasitism,c,colonisation c,0.591
+tab1,parasitism,phi,φ,0.486
+tab1,parasitism,kappa,C cost κ,0.575
+tab1,parasitism,rho,root suppression ρ,0.521
+tab1,parasitism,Kf,K_f,0.51
+tab1,parasitism,U0,fungal P need U_0,0.515
+tab1,parasitism,n,n,0.494
+tab2_eq,mutualism,K,fertility K_P,0.272
+tab2_eq,mutualism,r,r,0.715
+tab2_eq,mutualism,g,γ,0.6
+tab2_eq,mutualism,a,a_M,0.294
+tab2_eq,mutualism,b,b_M,0.415
+tab2_eq,mutualism,d,d_M,0.593
+tab2_eq,mutualism,e,e_M,0.708
+tab2_eq,commensalism,K,fertility K_P,0.37
+tab2_eq,commensalism,r,r,0.633
+tab2_eq,commensalism,g,γ,0.42
+tab2_eq,commensalism,a,a_M,0.382
+tab2_eq,commensalism,b,b_M,0.328
+tab2_eq,commensalism,d,d_M,0.689
+tab2_eq,commensalism,e,e_M,0.774
+tab2_eq,parasitism,K,fertility K_P,0.536
+tab2_eq,parasitism,r,r,0.469
+tab2_eq,parasitism,g,γ,0.49
+tab2_eq,parasitism,a,a_M,0.53
+tab2_eq,parasitism,b,b_M,0.518
+tab2_eq,parasitism,d,d_M,0.48
+tab2_eq,parasitism,e,e_M,0.466
+tab2_eq,cannot persist,K,fertility K_P,0.016
+tab2_eq,cannot persist,r,r,0.501
+tab2_eq,cannot persist,g,γ,0.499
+tab2_eq,cannot persist,a,a_M,0.488
+tab2_eq,cannot persist,b,b_M,0.214
+tab2_eq,cannot persist,d,d_M,0.811
+tab2_eq,cannot persist,e,e_M,0.517
+tab2_pulse,mutualism,K,fertility K_P,0.298
+tab2_pulse,mutualism,r,r,0.711
+tab2_pulse,mutualism,g,γ,0.515
+tab2_pulse,mutualism,a,a_M,0.299
+tab2_pulse,mutualism,b,b_M,0.326
+tab2_pulse,mutualism,d,d_M,0.694
+tab2_pulse,mutualism,e,e_M,0.832
+tab2_pulse,parasitism,K,fertility K_P,0.513
+tab2_pulse,parasitism,r,r,0.49
+tab2_pulse,parasitism,g,γ,0.499
+tab2_pulse,parasitism,a,a_M,0.51
+tab2_pulse,parasitism,b,b_M,0.51
+tab2_pulse,parasitism,d,d_M,0.489
+tab2_pulse,parasitism,e,e_M,0.484
+tab2_pulse,cannot persist,K,fertility K_P,0.016
+tab2_pulse,cannot persist,r,r,0.501
+tab2_pulse,cannot persist,g,γ,0.499
+tab2_pulse,cannot persist,a,a_M,0.488
+tab2_pulse,cannot persist,b,b_M,0.214
+tab2_pulse,cannot persist,d,d_M,0.811
+tab2_pulse,cannot persist,e,e_M,0.517
+tab3_plant,mutualism,K,fertility K_P,0.251
+tab3_plant,mutualism,r,r,0.721
+tab3_plant,mutualism,g,γ,0.545
+tab3_plant,mutualism,g2,γ_Z,0.535
+tab3_plant,mutualism,a1,a_M,0.392
+tab3_plant,mutualism,a2,a_Z,0.409
+tab3_plant,mutualism,b1,b_M,0.458
+tab3_plant,mutualism,b2,b_Z,0.432
+tab3_plant,mutualism,d1,d_M,0.558
+tab3_plant,mutualism,d2,d_Z,0.572
+tab3_plant,mutualism,e1,e_M,0.636
+tab3_plant,mutualism,e2,e_Z,0.6
+tab3_plant,mutualism,c1,α_MZ,0.495
+tab3_plant,mutualism,c2,α_ZM,0.513
+tab3_plant,commensalism,K,fertility K_P,0.345
+tab3_plant,commensalism,r,r,0.657
+tab3_plant,commensalism,g,γ,0.483
+tab3_plant,commensalism,g2,γ_Z,0.463
+tab3_plant,commensalism,a1,a_M,0.431
+tab3_plant,commensalism,a2,a_Z,0.414
+tab3_plant,commensalism,b1,b_M,0.397
+tab3_plant,commensalism,b2,b_Z,0.429
+tab3_plant,commensalism,d1,d_M,0.602
+tab3_plant,commensalism,d2,d_Z,0.591
+tab3_plant,commensalism,e1,e_M,0.612
+tab3_plant,commensalism,e2,e_Z,0.66
+tab3_plant,commensalism,c1,α_MZ,0.501
+tab3_plant,commensalism,c2,α_ZM,0.508
+tab3_plant,parasitism,K,fertility K_P,0.53
+tab3_plant,parasitism,r,r,0.474
+tab3_plant,parasitism,g,γ,0.496
+tab3_plant,parasitism,g2,γ_Z,0.497
+tab3_plant,parasitism,a1,a_M,0.513
+tab3_plant,parasitism,a2,a_Z,0.511
+tab3_plant,parasitism,b1,b_M,0.507
+tab3_plant,parasitism,b2,b_Z,0.509
+tab3_plant,parasitism,d1,d_M,0.491
+tab3_plant,parasitism,d2,d_Z,0.49
+tab3_plant,parasitism,e1,e_M,0.483
+tab3_plant,parasitism,e2,e_Z,0.487
+tab3_plant,parasitism,c1,α_MZ,0.5
+tab3_plant,parasitism,c2,α_ZM,0.499
+tab3_plant,no fungus persists,K,fertility K_P,0.012
+tab3_plant,no fungus persists,r,r,0.511
+tab3_plant,no fungus persists,g,γ,0.503
+tab3_plant,no fungus persists,g2,γ_Z,0.46
+tab3_plant,no fungus persists,a1,a_M,0.533
+tab3_plant,no fungus persists,a2,a_Z,0.497
+tab3_plant,no fungus persists,b1,b_M,0.267
+tab3_plant,no fungus persists,b2,b_Z,0.24
+tab3_plant,no fungus persists,d1,d_M,0.788
+tab3_plant,no fungus persists,d2,d_Z,0.76
+tab3_plant,no fungus persists,e1,e_M,0.504
+tab3_plant,no fungus persists,e2,e_Z,0.495
+tab3_plant,no fungus persists,c1,α_MZ,0.6
+tab3_plant,no fungus persists,c2,α_ZM,0.444
+tab3_winner,mutualist,K,fertility K_P,0.501
+tab3_winner,mutualist,r,r,0.498
+tab3_winner,mutualist,g,γ,0.501
+tab3_winner,mutualist,g2,γ_Z,0.5
+tab3_winner,mutualist,a1,a_M,0.5
+tab3_winner,mutualist,a2,a_Z,0.5
+tab3_winner,mutualist,b1,b_M,0.615
+tab3_winner,mutualist,b2,b_Z,0.389
+tab3_winner,mutualist,d1,d_M,0.397
+tab3_winner,mutualist,d2,d_Z,0.605
+tab3_winner,mutualist,e1,e_M,0.473
+tab3_winner,mutualist,e2,e_Z,0.52
+tab3_winner,mutualist,c1,α_MZ,0.453
+tab3_winner,mutualist,c2,α_ZM,0.556
+tab3_winner,coexistence,K,fertility K_P,0.504
+tab3_winner,coexistence,r,r,0.539
+tab3_winner,coexistence,g,γ,0.506
+tab3_winner,coexistence,g2,γ_Z,0.497
+tab3_winner,coexistence,a1,a_M,0.465
+tab3_winner,coexistence,a2,a_Z,0.508
+tab3_winner,coexistence,b1,b_M,0.495
+tab3_winner,coexistence,b2,b_Z,0.487
+tab3_winner,coexistence,d1,d_M,0.492
+tab3_winner,coexistence,d2,d_Z,0.473
+tab3_winner,coexistence,e1,e_M,0.797
+tab3_winner,coexistence,e2,e_Z,0.812
+tab3_winner,coexistence,c1,α_MZ,0.196
+tab3_winner,coexistence,c2,α_ZM,0.185
+tab3_winner,cheater,K,fertility K_P,0.501
+tab3_winner,cheater,r,r,0.501
+tab3_winner,cheater,g,γ,0.499
+tab3_winner,cheater,g2,γ_Z,0.5
+tab3_winner,cheater,a1,a_M,0.5
+tab3_winner,cheater,a2,a_Z,0.5
+tab3_winner,cheater,b1,b_M,0.386
+tab3_winner,cheater,b2,b_Z,0.612
+tab3_winner,cheater,d1,d_M,0.602
+tab3_winner,cheater,d2,d_Z,0.395
+tab3_winner,cheater,e1,e_M,0.52
+tab3_winner,cheater,e2,e_Z,0.473
+tab3_winner,cheater,c1,α_MZ,0.553
+tab3_winner,cheater,c2,α_ZM,0.452
+tab3_winner,none,K,fertility K_P,0.012
+tab3_winner,none,r,r,0.511
+tab3_winner,none,g,γ,0.503
+tab3_winner,none,g2,γ_Z,0.46
+tab3_winner,none,a1,a_M,0.533
+tab3_winner,none,a2,a_Z,0.497
+tab3_winner,none,b1,b_M,0.267
+tab3_winner,none,b2,b_Z,0.24
+tab3_winner,none,d1,d_M,0.788
+tab3_winner,none,d2,d_Z,0.76
+tab3_winner,none,e1,e_M,0.504
+tab3_winner,none,e2,e_Z,0.495
+tab3_winner,none,c1,α_MZ,0.6
+tab3_winner,none,c2,α_ZM,0.444
+tab4_plant,mutualism,K,fertility K_P,0.257
+tab4_plant,mutualism,r,r,0.718
+tab4_plant,mutualism,g,γ,0.543
+tab4_plant,mutualism,g2,γ_Z,0.531
+tab4_plant,mutualism,a1,a_M,0.382
+tab4_plant,mutualism,a2,a_Z,0.409
+tab4_plant,mutualism,b1,b_M,0.456
+tab4_plant,mutualism,b2,b_Z,0.442
+tab4_plant,mutualism,d1,d_M,0.559
+tab4_plant,mutualism,d2,d_Z,0.567
+tab4_plant,mutualism,e1,e_M,0.634
+tab4_plant,mutualism,e2,e_Z,0.593
+tab4_plant,mutualism,c1,α_MZ,0.495
+tab4_plant,mutualism,c2,α_ZM,0.517
+tab4_plant,mutualism,s,sanction s,0.511
+tab4_plant,mutualism,q0,q_0,0.492
+tab4_plant,commensalism,K,fertility K_P,0.35
+tab4_plant,commensalism,r,r,0.648
+tab4_plant,commensalism,g,γ,0.461
+tab4_plant,commensalism,g2,γ_Z,0.483
+tab4_plant,commensalism,a1,a_M,0.432
+tab4_plant,commensalism,a2,a_Z,0.418
+tab4_plant,commensalism,b1,b_M,0.396
+tab4_plant,commensalism,b2,b_Z,0.428
+tab4_plant,commensalism,d1,d_M,0.611
+tab4_plant,commensalism,d2,d_Z,0.595
+tab4_plant,commensalism,e1,e_M,0.618
+tab4_plant,commensalism,e2,e_Z,0.629
+tab4_plant,commensalism,c1,α_MZ,0.516
+tab4_plant,commensalism,c2,α_ZM,0.517
+tab4_plant,commensalism,s,sanction s,0.496
+tab4_plant,commensalism,q0,q_0,0.505
+tab4_plant,parasitism,K,fertility K_P,0.532
+tab4_plant,parasitism,r,r,0.473
+tab4_plant,parasitism,g,γ,0.496
+tab4_plant,parasitism,g2,γ_Z,0.497
+tab4_plant,parasitism,a1,a_M,0.515
+tab4_plant,parasitism,a2,a_Z,0.512
+tab4_plant,parasitism,b1,b_M,0.507
+tab4_plant,parasitism,b2,b_Z,0.508
+tab4_plant,parasitism,d1,d_M,0.491
+tab4_plant,parasitism,d2,d_Z,0.49
+tab4_plant,parasitism,e1,e_M,0.482
+tab4_plant,parasitism,e2,e_Z,0.487
+tab4_plant,parasitism,c1,α_MZ,0.5
+tab4_plant,parasitism,c2,α_ZM,0.498
+tab4_plant,parasitism,s,sanction s,0.499
+tab4_plant,parasitism,q0,q_0,0.501
+tab4_plant,no fungus persists,K,fertility K_P,0.013
+tab4_plant,no fungus persists,r,r,0.488
+tab4_plant,no fungus persists,g,γ,0.463
+tab4_plant,no fungus persists,g2,γ_Z,0.482
+tab4_plant,no fungus persists,a1,a_M,0.506
+tab4_plant,no fungus persists,a2,a_Z,0.535
+tab4_plant,no fungus persists,b1,b_M,0.28
+tab4_plant,no fungus persists,b2,b_Z,0.261
+tab4_plant,no fungus persists,d1,d_M,0.803
+tab4_plant,no fungus persists,d2,d_Z,0.758
+tab4_plant,no fungus persists,e1,e_M,0.575
+tab4_plant,no fungus persists,e2,e_Z,0.502
+tab4_plant,no fungus persists,c1,α_MZ,0.462
+tab4_plant,no fungus persists,c2,α_ZM,0.59
+tab4_plant,no fungus persists,s,sanction s,0.525
+tab4_plant,no fungus persists,q0,q_0,0.544
+tab4_winner,mutualist,K,fertility K_P,0.5
+tab4_winner,mutualist,r,r,0.499
+tab4_winner,mutualist,g,γ,0.522
+tab4_winner,mutualist,g2,γ_Z,0.484
+tab4_winner,mutualist,a1,a_M,0.503
+tab4_winner,mutualist,a2,a_Z,0.498
+tab4_winner,mutualist,b1,b_M,0.603
+tab4_winner,mutualist,b2,b_Z,0.4
+tab4_winner,mutualist,d1,d_M,0.406
+tab4_winner,mutualist,d2,d_Z,0.592
+tab4_winner,mutualist,e1,e_M,0.473
+tab4_winner,mutualist,e2,e_Z,0.518
+tab4_winner,mutualist,c1,α_MZ,0.457
+tab4_winner,mutualist,c2,α_ZM,0.553
+tab4_winner,mutualist,s,sanction s,0.511
+tab4_winner,mutualist,q0,q_0,0.49
+tab4_winner,coexistence,K,fertility K_P,0.501
+tab4_winner,coexistence,r,r,0.537
+tab4_winner,coexistence,g,γ,0.516
+tab4_winner,coexistence,g2,γ_Z,0.474
+tab4_winner,coexistence,a1,a_M,0.5
+tab4_winner,coexistence,a2,a_Z,0.513
+tab4_winner,coexistence,b1,b_M,0.489
+tab4_winner,coexistence,b2,b_Z,0.525
+tab4_winner,coexistence,d1,d_M,0.501
+tab4_winner,coexistence,d2,d_Z,0.491
+tab4_winner,coexistence,e1,e_M,0.805
+tab4_winner,coexistence,e2,e_Z,0.798
+tab4_winner,coexistence,c1,α_MZ,0.201
+tab4_winner,coexistence,c2,α_ZM,0.196
+tab4_winner,coexistence,s,sanction s,0.515
+tab4_winner,coexistence,q0,q_0,0.478
+tab4_winner,cheater,K,fertility K_P,0.502
+tab4_winner,cheater,r,r,0.5
+tab4_winner,cheater,g,γ,0.474
+tab4_winner,cheater,g2,γ_Z,0.52
+tab4_winner,cheater,a1,a_M,0.497
+tab4_winner,cheater,a2,a_Z,0.502
+tab4_winner,cheater,b1,b_M,0.382
+tab4_winner,cheater,b2,b_Z,0.617
+tab4_winner,cheater,d1,d_M,0.608
+tab4_winner,cheater,d2,d_Z,0.392
+tab4_winner,cheater,e1,e_M,0.523
+tab4_winner,cheater,e2,e_Z,0.472
+tab4_winner,cheater,c1,α_MZ,0.557
+tab4_winner,cheater,c2,α_ZM,0.446
+tab4_winner,cheater,s,sanction s,0.487
+tab4_winner,cheater,q0,q_0,0.512
+tab4_winner,none,K,fertility K_P,0.013
+tab4_winner,none,r,r,0.488
+tab4_winner,none,g,γ,0.463
+tab4_winner,none,g2,γ_Z,0.482
+tab4_winner,none,a1,a_M,0.506
+tab4_winner,none,a2,a_Z,0.535
+tab4_winner,none,b1,b_M,0.28
+tab4_winner,none,b2,b_Z,0.261
+tab4_winner,none,d1,d_M,0.803
+tab4_winner,none,d2,d_Z,0.758
+tab4_winner,none,e1,e_M,0.575
+tab4_winner,none,e2,e_Z,0.502
+tab4_winner,none,c1,α_MZ,0.462
+tab4_winner,none,c2,α_ZM,0.59
+tab4_winner,none,s,sanction s,0.525
+tab4_winner,none,q0,q_0,0.544

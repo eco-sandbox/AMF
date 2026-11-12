@@ -1,0 +1,712 @@
+{
+ "title": "One notion to rule them all",
+ "intro_md": [
+  "Glossary and notation for the plant–AMF interaction-spectrum model. One notation is used in every tab, formula, slider label and hover text.",
+  "**Competition convention:** α_ij = effect of species j on species i. So α_MZ = effect of the cheater Z on the mutualist M (paper c₁), and α_ZM = effect of M on Z (paper c₂). In the model they appear as dM/dt = b_M·H·M − d_M·M(1 + e_M·M + α_MZ·Z) and dZ/dt = b_Z·H·Z − d_Z·Z(1 + e_Z·Z + α_ZM·M).",
+  "**Source column:** short reference of the paper a symbol comes from; blank = introduced here or a generic term. **Source symbol** = the symbol used in that source."
+ ],
+ "tabs_note": "Tabs: ① static physiology, ② population dynamics, ③ cheater fungus, ④ plant sanctions, ⑤ parameter space.",
+ "symbols": [
+  {
+   "sym": "H",
+   "md": "H",
+   "name": "Host density",
+   "notes": "Plant population density.",
+   "units": "relative density",
+   "tabs": "②③④",
+   "src": "Neuhauser & Fargione 2004",
+   "source_symbol": "H",
+   "keys": []
+  },
+  {
+   "sym": "H*",
+   "md": "H*",
+   "name": "Equilibrium host density",
+   "notes": "Long-run host density with the fungi present.",
+   "units": "relative density",
+   "tabs": "②③④",
+   "src": "Neuhauser & Fargione 2004",
+   "source_symbol": "H*, H̄",
+   "keys": []
+  },
+  {
+   "sym": "H<sub>NM</sub>",
+   "md": "H_NM",
+   "name": "Host density without fungi",
+   "notes": "Logistic growth to K_P; at equilibrium H_NM = K_P.",
+   "units": "relative density",
+   "tabs": "②③",
+   "src": "Neuhauser & Fargione 2004",
+   "source_symbol": "–",
+   "keys": []
+  },
+  {
+   "sym": "M",
+   "md": "M",
+   "name": "Mutualist symbiont density",
+   "notes": "Fungus that can provide benefit (raises host capacity via γ).",
+   "units": "relative density",
+   "tabs": "②③④",
+   "src": "Neuhauser & Fargione 2004",
+   "source_symbol": "P",
+   "keys": []
+  },
+  {
+   "sym": "Z",
+   "md": "Z",
+   "name": "Cheater density",
+   "notes": "Fungus that provides no benefit (γ_Z = 0 in the paper) but competes for the host.",
+   "units": "relative density",
+   "tabs": "③④",
+   "src": "Neuhauser & Fargione 2004",
+   "source_symbol": "Q",
+   "keys": []
+  },
+  {
+   "sym": "K<sub>P</sub>",
+   "md": "K_P",
+   "name": "Phosphorus / soil fertility (host carrying capacity without fungi)",
+   "notes": "Higher K_P = more fertile. Conceptually increases with soil-available P, S (tab ①); no quantitative mapping K_P(S) is implied.",
+   "units": "relative density",
+   "tabs": "②③④",
+   "src": "Neuhauser & Fargione 2004",
+   "source_symbol": "K",
+   "keys": [
+    "dyn:K",
+    "cheat:K",
+    "sanc:K"
+   ]
+  },
+  {
+   "sym": "γ",
+   "md": "γ",
+   "name": "Benefit coefficient",
+   "notes": "Increase in host carrying capacity per mutualist: capacity = K_P + γM.",
+   "units": "host capacity per unit M",
+   "tabs": "②③④",
+   "src": "Neuhauser & Fargione 2004",
+   "source_symbol": "γ",
+   "keys": [
+    "dyn:g",
+    "cheat:g"
+   ]
+  },
+  {
+   "sym": "γ<sub>Z</sub>",
+   "md": "γ_Z",
+   "name": "Benefit coefficient of the cheater",
+   "notes": "0 = pure cheater (paper). Capacity becomes K_P + γM + γ_Z Z.",
+   "units": "host capacity per unit Z",
+   "tabs": "③④",
+   "src": "cf. Neuhauser & Fargione 2004",
+   "source_symbol": "–",
+   "keys": [
+    "cheat:g2",
+    "sanc:g2"
+   ]
+  },
+  {
+   "sym": "a<sub>M</sub>, a<sub>Z</sub>",
+   "md": "a_M, a_Z",
+   "name": "Cost to host per symbiont",
+   "notes": "Carbon or other cost (exploitation) per unit mutualist / cheater.",
+   "units": "per density per time",
+   "tabs": "②③④",
+   "src": "Neuhauser & Fargione 2004",
+   "source_symbol": "a, a₁, a₂",
+   "keys": [
+    "dyn:a",
+    "cheat:a1",
+    "cheat:a2"
+   ]
+  },
+  {
+   "sym": "α<sub>MZ</sub>, α<sub>ZM</sub>",
+   "md": "α_MZ, α_ZM",
+   "name": "Competition coefficients between M and Z",
+   "notes": "Convention α_ij = effect of j on i: α_MZ = effect of the cheater Z on the mutualist M (paper c₁), α_ZM = effect of M on Z (paper c₂). As in the paper they act inside the density-dependent death term, d_M M(1 + e_M M + α_MZ Z).",
+   "units": "dimensionless",
+   "tabs": "③④",
+   "src": "Neuhauser & Fargione 2004",
+   "source_symbol": "c₁, c₂",
+   "keys": [
+    "cheat:c1",
+    "cheat:c2",
+    "sanc:c1",
+    "sanc:c2"
+   ]
+  },
+  {
+   "sym": "r",
+   "md": "r",
+   "name": "Host intrinsic growth rate",
+   "notes": "Per-capita host growth at low density.",
+   "units": "per time",
+   "tabs": "②③④",
+   "src": "Neuhauser & Fargione 2004",
+   "source_symbol": "r",
+   "keys": [
+    "dyn:r",
+    "cheat:r"
+   ]
+  },
+  {
+   "sym": "b<sub>M</sub>, b<sub>Z</sub>",
+   "md": "b_M, b_Z",
+   "name": "Symbiont growth rate on the host",
+   "notes": "Per-capita fungal growth per unit host. The paper assumes b_M/d_M > b_Z/d_Z (mutualist grows faster).",
+   "units": "per host density per time",
+   "tabs": "②③④",
+   "src": "Neuhauser & Fargione 2004",
+   "source_symbol": "b, b₁, b₂",
+   "keys": [
+    "dyn:b",
+    "cheat:b1",
+    "cheat:b2"
+   ]
+  },
+  {
+   "sym": "d<sub>M</sub>, d<sub>Z</sub>",
+   "md": "d_M, d_Z",
+   "name": "Symbiont density-independent death rate",
+   "notes": "",
+   "units": "per time",
+   "tabs": "②③④",
+   "src": "Neuhauser & Fargione 2004",
+   "source_symbol": "d, d₁, d₂",
+   "keys": [
+    "dyn:d",
+    "cheat:d1",
+    "cheat:d2"
+   ]
+  },
+  {
+   "sym": "e<sub>M</sub>, e<sub>Z</sub>",
+   "md": "e_M, e_Z",
+   "name": "Symbiont self-limitation (density-dependent death)",
+   "notes": "Strength of intraspecific competition.",
+   "units": "per density",
+   "tabs": "②③④",
+   "src": "Neuhauser & Fargione 2004",
+   "source_symbol": "e, e₁, e₂",
+   "keys": [
+    "dyn:e",
+    "cheat:e1",
+    "cheat:e2",
+    "sanc:e1",
+    "sanc:e2"
+   ]
+  },
+  {
+   "sym": "M*",
+   "md": "M*",
+   "name": "Equilibrium mutualist density",
+   "notes": "Interior equilibrium of the host–mutualist model (solved analytically). Pulse-mutualistic iff M* < r/2a_M − K_P/2γ (vertex height); equilibrium-mutualistic iff M* < r/a_M − K_P/γ.",
+   "units": "relative density",
+   "tabs": "②",
+   "src": "Neuhauser & Fargione 2004",
+   "source_symbol": "P*",
+   "keys": []
+  },
+  {
+   "sym": "J<sub>HM</sub>",
+   "md": "J_HM",
+   "name": "Pulse-criterion value ∂(dH/dt)/∂M at equilibrium",
+   "notes": "= H*[rγH*/(K_P+γM*)² − a_M]; > 0 mutualism, < 0 parasitism.",
+   "units": "per time",
+   "tabs": "②",
+   "src": "Neuhauser & Fargione 2004",
+   "source_symbol": "∂(dH/dt)/∂P",
+   "keys": []
+  },
+  {
+   "sym": "γr/a<sub>M</sub>",
+   "md": "γr/a_M",
+   "name": "Sufficient parasitism bound",
+   "notes": "If K_P > γr/a_M the vertex of the host isocline lies below M = 0 and both criteria are always parasitic. Only sufficient: the actual switch points (see M*) lie at lower K_P.",
+   "units": "like K_P",
+   "tabs": "②",
+   "src": "Neuhauser & Fargione 2004",
+   "source_symbol": "γr/a",
+   "keys": []
+  },
+  {
+   "sym": "λ<sub>M</sub><sup>(M)</sup>, λ<sub>Z</sub><sup>(M)</sup>, λ<sub>M</sub><sup>(Z)</sup>, λ<sub>Z</sub><sup>(Z)</sup>",
+   "md": "λ_M^(M), λ_Z^(M), λ_M^(Z), λ_Z^(Z)",
+   "name": "Symbiont carrying capacities for invasion criteria",
+   "notes": "λ_i^(X) = (1/e_i)((b_i/d_i) H̄^(X) − 1), host fixed at the X-only equilibrium. Z invades the M-only equilibrium iff α_ZM < e_Z λ_Z^(M)/λ_M^(M); M invades the Z-only equilibrium iff α_MZ < e_M λ_M^(Z)/λ_Z^(Z).",
+   "units": "relative density",
+   "tabs": "③",
+   "src": "Neuhauser & Fargione 2004",
+   "source_symbol": "λ₁ᴾ, λ₂ᴾ, λ₁ᑫ, λ₂ᑫ",
+   "keys": []
+  },
+  {
+   "sym": "H<sub>0</sub>, M<sub>0</sub>, Z<sub>0</sub>",
+   "md": "H_0, M_0, Z_0",
+   "name": "Initial densities",
+   "notes": "",
+   "units": "relative density",
+   "tabs": "②③④",
+   "src": "",
+   "source_symbol": "–",
+   "keys": [
+    "dyn:H0",
+    "dyn:P0",
+    "cheat:H0",
+    "cheat:P0",
+    "cheat:Q0",
+    "sanc:P0",
+    "sanc:Q0"
+   ]
+  },
+  {
+   "sym": "t, t<sub>max</sub>",
+   "md": "t, t_max",
+   "name": "Time and simulated time horizon",
+   "notes": "",
+   "units": "placeholder time units",
+   "tabs": "②③④",
+   "src": "",
+   "source_symbol": "–",
+   "keys": [
+    "dyn:T",
+    "cheat:T",
+    "sanc:T"
+   ]
+  },
+  {
+   "sym": "s",
+   "md": "s",
+   "name": "Sanction strength",
+   "notes": "0 = no discrimination; 1 = rewards fully proportional to benefit delivered.",
+   "units": "dimensionless, 0–1",
+   "tabs": "④",
+   "src": "cf. Hammerstein & Noë 2016",
+   "source_symbol": "–",
+   "keys": [
+    "sanc:s"
+   ]
+  },
+  {
+   "sym": "q<sub>0</sub>",
+   "md": "q_0",
+   "name": "Baseline reward / recognition noise",
+   "notes": "Added to every fungus’ benefit before rewards are computed; higher = plant tells partners apart less well.",
+   "units": "like γ",
+   "tabs": "④",
+   "src": "cf. Hammerstein & Noë 2016",
+   "source_symbol": "–",
+   "keys": [
+    "sanc:q0"
+   ]
+  },
+  {
+   "sym": "q<sub>M</sub>, q<sub>Z</sub>, q̄",
+   "md": "q_M, q_Z, q̄",
+   "name": "Perceived benefit per fungus and its abundance-weighted mean",
+   "notes": "q_M = γ + q_0, q_Z = γ_Z + q_0, q̄ = (M q_M + Z q_Z)/(M + Z).",
+   "units": "like γ",
+   "tabs": "④",
+   "src": "cf. Hammerstein & Noë 2016",
+   "source_symbol": "–",
+   "keys": []
+  },
+  {
+   "sym": "w<sub>M</sub>, w<sub>Z</sub>",
+   "md": "w_M, w_Z",
+   "name": "Reward weights (carbon per unit fungus, relative)",
+   "notes": "w_i = (1 − s) + s q_i/q̄; M w_M + Z w_Z = M + Z, so sanctions redistribute the reward per unit fungus without changing its total. The host’s carbon drain a_M w_M M + a_Z w_Z Z is not conserved when a_M ≠ a_Z. Multiply both a_i and b_i.",
+   "units": "dimensionless",
+   "tabs": "④",
+   "src": "cf. Hammerstein & Noë 2016",
+   "source_symbol": "–",
+   "keys": []
+  },
+  {
+   "sym": "M/(M+Z)",
+   "md": "M/(M+Z)",
+   "name": "Mutualist share of the fungal community",
+   "notes": "Used for mixed colonisation and the sanctions map.",
+   "units": "0–1",
+   "tabs": "③④",
+   "src": "",
+   "source_symbol": "–",
+   "keys": []
+  },
+  {
+   "sym": "φ<sub>Z</sub>, φ<sub>mix</sub>",
+   "md": "φ_Z, φ_mix",
+   "name": "Cheater cooperativeness and community cooperativeness",
+   "notes": "Bridge to tab ①: φ_mix = [M φ + Z φ_Z]/(M + Z) replaces φ in the static model.",
+   "units": "0–1",
+   "tabs": "③ (→①)",
+   "src": "",
+   "source_symbol": "–",
+   "keys": [
+    "cheat:phiC"
+   ]
+  },
+  {
+   "sym": "ε",
+   "md": "ε",
+   "name": "Commensalism band",
+   "notes": "|response| ≤ ε counts as commensal (neutral). Used for MGR, ln(H*/K_P) and Δ_F.",
+   "units": "log-ratio",
+   "tabs": "①②③④",
+   "src": "",
+   "source_symbol": "–",
+   "keys": [
+    "static:eps",
+    "dyn:eps"
+   ]
+  },
+  {
+   "sym": "S",
+   "md": "S",
+   "name": "Soil-available phosphorus",
+   "notes": "Drives root and hyphal P uptake in tab ①. Relation: higher S ↔ higher fertility K_P in tabs ②–④ (conceptual only).",
+   "units": "placeholder “mg P kg⁻¹” scale",
+   "tabs": "①",
+   "src": "cf. Hochberg et al. 2000; Schwartz & Hoeksema 1998",
+   "source_symbol": "–",
+   "keys": [
+    "static:S"
+   ]
+  },
+  {
+   "sym": "L",
+   "md": "L",
+   "name": "Light / relative carbon supply",
+   "notes": "",
+   "units": "0–1, relative to maximum",
+   "tabs": "①",
+   "src": "cf. Schwartz & Hoeksema 1998",
+   "source_symbol": "–",
+   "keys": [
+    "static:L"
+   ]
+  },
+  {
+   "sym": "A<sub>max</sub>, A",
+   "md": "A_max, A",
+   "name": "Maximum and actual carbon fixation",
+   "notes": "A = A_max L.",
+   "units": "relative C units",
+   "tabs": "①",
+   "src": "",
+   "source_symbol": "–",
+   "keys": [
+    "static:Amax"
+   ]
+  },
+  {
+   "sym": "Y",
+   "md": "Y",
+   "name": "Carbon → biomass yield",
+   "notes": "",
+   "units": "biomass per C",
+   "tabs": "①",
+   "src": "",
+   "source_symbol": "–",
+   "keys": [
+    "static:Y"
+   ]
+  },
+  {
+   "sym": "θ",
+   "md": "θ",
+   "name": "Phosphorus requirement per unit biomass",
+   "notes": "Higher = more P-hungry plant.",
+   "units": "P per biomass",
+   "tabs": "①",
+   "src": "cf. Grasso et al. 2025",
+   "source_symbol": "–",
+   "keys": [
+    "static:theta"
+   ]
+  },
+  {
+   "sym": "u<sub>r</sub>, K<sub>r</sub>",
+   "md": "u_r, K_r",
+   "name": "Root P uptake: maximum rate and half-saturation constant",
+   "notes": "Michaelis–Menten; K_r is a half-saturation constant, not a carrying capacity (unrelated to K_P). Subscript r = root (unrelated to growth rate r).",
+   "units": "relative; K_r in S units",
+   "tabs": "①",
+   "src": "",
+   "source_symbol": "–",
+   "keys": [
+    "static:Kr"
+   ]
+  },
+  {
+   "sym": "u<sub>f</sub>, K<sub>f</sub>",
+   "md": "u_f, K_f",
+   "name": "Hyphal P uptake: maximum rate and half-saturation constant",
+   "notes": "K_f < K_r: hyphae scavenge better at low P.",
+   "units": "relative; K_f in S units",
+   "tabs": "①",
+   "src": "",
+   "source_symbol": "–",
+   "keys": [
+    "static:Kf"
+   ]
+  },
+  {
+   "sym": "U<sub>r</sub>, U<sub>f</sub>",
+   "md": "U_r, U_f",
+   "name": "Root and hyphal P uptake rates",
+   "notes": "U = u S/(K + S).",
+   "units": "relative P units",
+   "tabs": "①",
+   "src": "",
+   "source_symbol": "–",
+   "keys": []
+  },
+  {
+   "sym": "U<sub>0</sub>",
+   "md": "U_0",
+   "name": "Fungal own P need",
+   "notes": "Hyphal P the fungus keeps before passing any on: transfer = cφ·max(U_f − U_0, 0). At very low S nothing is passed, so MGR ≈ ln(1 − ρc) < 0 and MGR peaks at intermediate S. U_0 = 0 recovers the model without a hump.",
+   "units": "relative P units (as U_f)",
+   "tabs": "①",
+   "src": "cf. Schwartz & Hoeksema 1998",
+   "source_symbol": "X",
+   "keys": [
+    "static:U0"
+   ]
+  },
+  {
+   "sym": "c",
+   "md": "c",
+   "name": "Colonisation",
+   "notes": "Fraction of root length colonised.",
+   "units": "0–1",
+   "tabs": "①",
+   "src": "",
+   "source_symbol": "–",
+   "keys": [
+    "static:c"
+   ]
+  },
+  {
+   "sym": "φ",
+   "md": "φ",
+   "name": "Cooperativeness of the (mutualist) fungus",
+   "notes": "Share of fungal P (above the fungus's own need U_0) passed to the plant.",
+   "units": "0–1",
+   "tabs": "①③",
+   "src": "cf. Grasso et al. 2025",
+   "source_symbol": "–",
+   "keys": [
+    "static:phi"
+   ]
+  },
+  {
+   "sym": "κ",
+   "md": "κ",
+   "name": "Carbon cost",
+   "notes": "Fraction of fixed C per unit colonisation passed to the fungus.",
+   "units": "0–1",
+   "tabs": "①",
+   "src": "cf. Grasso et al. 2025",
+   "source_symbol": "–",
+   "keys": [
+    "static:kappa"
+   ]
+  },
+  {
+   "sym": "ρ",
+   "md": "ρ",
+   "name": "Root-pathway suppression",
+   "notes": "Down-regulation of direct root uptake in colonised roots.",
+   "units": "0–1",
+   "tabs": "①",
+   "src": "",
+   "source_symbol": "–",
+   "keys": [
+    "static:rho"
+   ]
+  },
+  {
+   "sym": "P<sub>AM</sub>, P<sub>NM</sub>",
+   "md": "P_AM, P_NM",
+   "name": "Phosphorus acquired by the mycorrhizal (AM) / non-mycorrhizal (NM) plant",
+   "notes": "P here always means phosphorus (never a fungal density).",
+   "units": "relative P units",
+   "tabs": "①",
+   "src": "",
+   "source_symbol": "–",
+   "keys": []
+  },
+  {
+   "sym": "C<sub>AM</sub>, C<sub>NM</sub>",
+   "md": "C_AM, C_NM",
+   "name": "Carbon available for growth (AM / NM plant)",
+   "notes": "C_AM = A(1 − cκ).",
+   "units": "relative C units",
+   "tabs": "①",
+   "src": "",
+   "source_symbol": "–",
+   "keys": []
+  },
+  {
+   "sym": "B<sub>AM</sub>, B<sub>NM</sub>",
+   "md": "B_AM, B_NM",
+   "name": "Plant biomass with / without mycorrhiza",
+   "notes": "B = softmin(Y C, P/θ). Renamed from M_AM/M_NM to avoid a clash with mutualist density M.",
+   "units": "relative biomass",
+   "tabs": "①",
+   "src": "",
+   "source_symbol": "–",
+   "keys": []
+  },
+  {
+   "sym": "n",
+   "md": "n",
+   "name": "Co-limitation sharpness",
+   "notes": "softmin(x,y) = (x⁻ⁿ + y⁻ⁿ)^(−1/n); n → ∞ is the strict Liebig minimum.",
+   "units": "dimensionless",
+   "tabs": "①",
+   "src": "cf. Grasso et al. 2025",
+   "source_symbol": "–",
+   "keys": [
+    "static:n"
+   ]
+  },
+  {
+   "sym": "MGR",
+   "md": "MGR",
+   "name": "Mycorrhizal growth response",
+   "notes": "ln(B_AM/B_NM). In tabs ②–④ the analogous population-level response is ln(H*/K_P).",
+   "units": "log-ratio",
+   "tabs": "①",
+   "src": "",
+   "source_symbol": "–",
+   "keys": []
+  },
+  {
+   "sym": "T<sub>eff</sub>",
+   "md": "T_eff",
+   "name": "Effective exchange rate",
+   "notes": "Extra P gained per unit C paid: (cφU_f − ρcU_r)/(cκA). Market view after Schwartz & Hoeksema 1998.",
+   "units": "P per C",
+   "tabs": "①",
+   "src": "cf. Schwartz & Hoeksema 1998",
+   "source_symbol": "–",
+   "keys": []
+  },
+  {
+   "sym": "F, Y<sub>f</sub>, θ<sub>f</sub>, β<sub>f</sub>",
+   "md": "F, Y_f, θ_f, β_f",
+   "name": "Fungal growth, its yield, P requirement and own C uptake",
+   "notes": "F = Y_f softmin(cκA + β_f, (cU_f − cφ·max(U_f − U_0, 0))/θ_f). Speculative.",
+   "units": "relative",
+   "tabs": "①",
+   "src": "",
+   "source_symbol": "–",
+   "keys": [
+    "static:thetaF"
+   ]
+  },
+  {
+   "sym": "F<sub>ref</sub>, Δ<sub>F</sub>",
+   "md": "F_ref, Δ_F",
+   "name": "Reference fungal fitness and fungal response",
+   "notes": "Δ_F = ln(F/F_ref); F_ref = fitness with a reference partner (AMF are obligate). The sign of Δ_F, and so the 2-D label, depends on the choice of F_ref.",
+   "units": "relative; log-ratio",
+   "tabs": "①",
+   "src": "cf. Grasso et al. 2025",
+   "source_symbol": "–",
+   "keys": [
+    "static:Fref"
+   ]
+  }
+ ],
+ "terms": [
+  {
+   "term": "Mutualism",
+   "definition": "Both partners are better off together. Here: the plant’s response (MGR or ln(H*/K_P)) is above +ε. Colour: green."
+  },
+  {
+   "term": "Commensalism",
+   "definition": "One partner gains while the other is essentially unaffected; here the plant response lies within ±ε. Colour: grey."
+  },
+  {
+   "term": "Parasitism",
+   "definition": "The fungus gains at the plant’s expense: the plant response is below −ε. Colour: red."
+  },
+  {
+   "term": "Amensalism / competition",
+   "definition": "Other sign combinations on the plant × fungus plane (tab ①): (0,−) amensalism, (−,−) competition."
+  },
+  {
+   "term": "MGR (mycorrhizal growth response)",
+   "definition": "How much bigger (or smaller) a mycorrhizal plant is than a non-mycorrhizal one, on a log scale: ln(B_AM/B_NM). MGR = 0.1 ≈ 10% bigger."
+  },
+  {
+   "term": "Liebig limitation / co-limitation",
+   "definition": "Growth is set by the scarcest resource (here carbon or phosphorus). The smooth version (softmin) lets both matter near the switch point."
+  },
+  {
+   "term": "C-limited / P-limited",
+   "definition": "Which resource currently sets growth. A P-limited plant profits from fungal P; a C-limited plant mainly feels the carbon it pays."
+  },
+  {
+   "term": "Exchange rate",
+   "definition": "How much P the plant gets per unit carbon given (T_eff). Trade is beneficial only within a window of exchange rates (biological market view)."
+  },
+  {
+   "term": "Carrying capacity",
+   "definition": "The density a population settles at when resources limit it. K_P is the host’s carrying capacity without fungi and stands in for soil fertility."
+  },
+  {
+   "term": "Equilibrium criterion",
+   "definition": "Long-term experiment: grow the plant with and without the fungus until both settle; mutualism if H* > K_P (ln(H*/K_P) > ε)."
+  },
+  {
+   "term": "Pulse criterion",
+   "definition": "Short-term experiment: at equilibrium, add a few more fungi; mutualism if this speeds up host growth (J_HM > 0). Can disagree with the equilibrium criterion."
+  },
+  {
+   "term": "Isocline (nullcline)",
+   "definition": "Curve in the phase plane where one population does not change. Equilibria are where the host and fungus isoclines cross."
+  },
+  {
+   "term": "Vertex",
+   "definition": "The peak of the host isocline. An equilibrium below it is pulse-mutualistic, above it pulse-parasitic."
+  },
+  {
+   "term": "Cheater",
+   "definition": "A fungus that takes host carbon but delivers no (or little) benefit (Z, γ_Z ≈ 0)."
+  },
+  {
+   "term": "Invasion criterion",
+   "definition": "Can a rare fungus increase when the other fungus is established? If both can invade they coexist; if neither can, the outcome depends on who arrives first (bistability)."
+  },
+  {
+   "term": "Coexistence / exclusion",
+   "definition": "Both fungi persist / one drives the other out."
+  },
+  {
+   "term": "Sanctions (reciprocal rewards)",
+   "definition": "The plant gives more carbon to partners that deliver more P and less to cheaters (s = strength). Here modelled as a redistribution of the reward per unit fungus; total carbon paid still changes when partners differ in cost."
+  },
+  {
+   "term": "Partner choice",
+   "definition": "Choosing or favouring better partners in a biological market (Hammerstein & Noë 2016); sanctions are one mechanism."
+  },
+  {
+   "term": "Placeholder units",
+   "definition": "All parameter values are illustrative and in relative units; the app shows qualitative patterns, not calibrated predictions."
+  },
+  {
+   "term": "Parameter-space share",
+   "definition": "The fraction of Latin-hypercube samples, drawn across a tab's slider ranges, that fall in an outcome class (mutualism, commensalism, parasitism, or 'cannot persist'). Shares describe that slider box, not frequencies in nature; they change if the ranges or the sampling scale change. Colour: as in the other tabs (green / grey / red)."
+  },
+  {
+   "term": "Importance",
+   "definition": "How strongly a parameter shifts the predicted outcome class, measured as random-forest permutation importance on the same Latin-hypercube sample (scaled so the top parameter is 1). It identifies which sliders drive the classification, not a causal effect size."
+  }
+ ]
+}

@@ -1,0 +1,97 @@
+  <details class="card howcard" id="how">
+    <summary>How the model works — all tabs (equations, assumptions, sources, symbols are defined in the Glossary tab)</summary>
+    <div class="how">
+      <p class="warn"><b>Interactive model.</b> All parameter values and units are <b>illustrative placeholders</b> chosen to make the
+        qualitative patterns visible, they are not fitted to any data set. The structure is a minimal synthesis loosely based on the papers credited below.</p>
+      <h3 class="howh">① Static physiology</h3>
+      <p><b>Carbon.</b> Fixed C: \(A = A_{\max} L\). Mycorrhizal plants pass a fraction \(c\kappa\) to the fungus:
+        \(C_{NM}=A,\; C_{AM}=A(1-c\kappa)\).</p>
+      <p><b>Phosphorus.</b> Saturating uptake by roots and by hyphae (hyphae scavenge better at low P, \(K_f &lt; K_r\)):
+        $$U_r=u_r\frac{S}{K_r+S},\qquad U_f=u_f\frac{S}{K_f+S}$$
+        $$P_{NM}=U_r,\qquad P_{AM}=(1-\rho c)\,U_r + c\,\phi\,\max(U_f-U_0,\,0)$$
+        where \(\rho\) is down-regulation of the direct root pathway and \(\phi\) the share of fungal P passed to the host. The fungus first keeps its own P need \(U_0\) (per unit colonisation) and passes on only the surplus; \(U_0=0\) gives the model without a hump. \(S\) = soil-available P; \(P_{AM},P_{NM}\) = phosphorus acquired (in this app P always means phosphorus, never a fungal density). \(K_r,K_f\) are half-saturation constants, not carrying capacities.</p>
+      <p><b>Growth = smoothed Liebig co-limitation</b>, biomass \(B\) (strict minimum as \(n\to\infty\)):
+        $$B=\operatorname{softmin}\!\left(Y C,\;\frac{P}{\theta}\right),\qquad \operatorname{softmin}(x,y)=\left(x^{-n}+y^{-n}\right)^{-1/n}$$
+        The plant is called <i>C-limited</i> if \(YC < P/\theta\), otherwise <i>P-limited</i>.</p>
+      <p><b>Mycorrhizal growth response and classification</b>
+        $$\mathrm{MGR}=\ln\frac{B_{AM}}{B_{NM}}\quad\Rightarrow\quad
+          \begin{cases}\text{mutualism} & \mathrm{MGR}>\epsilon\\ \text{commensalism} & |\mathrm{MGR}|\le\epsilon\\ \text{parasitism} & \mathrm{MGR}<-\epsilon\end{cases}$$
+        Intuition: when P limits growth, extra fungal P raises growth (MGR &gt; 0); when C limits growth, the C paid to the fungus
+        reduces it (strict-Liebig limit: \(\mathrm{MGR}=\ln(1-c\kappa)<0\)).
+        <b>Hump along fertility.</b> With \(U_0&gt;0\), MGR peaks at intermediate \(S\): in very P-poor soil the hyphae take up less than the fungus's own need (\(U_f\le U_0\)), nothing is passed on and MGR \(=\ln(1-\rho c)&lt;0\); at intermediate \(S\) the surplus P pays; at high \(S\) the plant is C-limited and the C paid makes MGR negative again. At the defaults (\(U_0=0.3\)): parasitism for \(S&lt;1.4\), mutualism for \(1.5&lt;S&lt;19.5\) with a peak MGR = 0.47 at \(S\approx4.2\), parasitism for \(S&gt;28.6\) (commensal in between). This matches the field pattern summarised by Grasso et al. (2025, citing Albornoz et al. 2021): no P benefit in extremely P-poor soils, and suppressed associations in P-rich soils. With \(U_0=0\), MGR falls monotonically with \(S\).
+        Edge cases: \(c=0\) is shown as “no colonisation / neutral”; with \(c=\rho=1,\ \phi=0\) the AM plant acquires no P and MGR \(\to-\infty\) (clipped in the plots).</p>
+      <p><b>Benefit vs. cost (plot ②)</b>: benefit \(=B(P_{AM},C_{NM})-B_{NM}\) (P effect alone); cost \(=B(P_{AM},C_{NM})-B_{AM}\) (C effect); net \(=B_{AM}-B_{NM}\). The split is evaluated P first; the reverse order gives the same net, but a different split.</p>
+      <p><b>Effective exchange rate</b> (market view): extra P gained per unit C paid,
+        $$T_{\text{eff}}=\frac{c\phi \max(U_f-U_0,0)-\rho c U_r}{c\kappa A}\quad[\text{P per C}].$$</p>
+      <p><b>Fungal side (plot ⑤, speculative).</b> Fungal growth \(F = Y_f\,\operatorname{softmin}\!\big(c\kappa A+\beta_f,\;\big[c\,U_f-c\,\phi\max(U_f-U_0,0)\big]/\theta_f\big)\),
+        response \(\Delta_F=\ln(F/F_{\text{ref}})\) where \(F_{\text{ref}}\) is the fitness the fungus would get with a reference partner
+        (AMF are obligate, so “no partner” = zero is no useful baseline). Sign pairs (with the same ±ε band) give: (+,+) mutualism,
+        (0,+) commensalism, (−,+) fungus parasitic, (+,−) plant exploits fungus, (−,−) competition, (0,−) amensalism.
+        The fungal C income \(c\kappa A\) does not depend on P delivered, so \(\Delta_F\) is often flat in \(S\) and its sign, hence the quadrant label, is set by the arbitrary \(F_{\text{ref}}\).</p>
+      <h3 class="howh">② Population dynamics</h3>
+      <p>Neuhauser &amp; Fargione (2004), eq. (1), in this model’s notation (paper: \(P\to M\), \(K\to K_P\), \(a,b,d,e\to a_M,b_M,d_M,e_M\)): host \(H\), mutualist \(M\)
+        $$\frac{dH}{dt}=rH\left(1-\frac{H}{K_P+\gamma M}\right)-a_MHM,\qquad \frac{dM}{dt}=b_MHM-d_MM(1+e_MM).$$
+        \(\gamma M\) is the host’s gain (raised carrying capacity), \(a_M\) the cost to the host. Assumes \(K_P>d_M/b_M\); otherwise the fungus cannot persist and the app shows no classification.
+        <b>Equilibrium criterion:</b> compare \(H^*\) with the host-only equilibrium \(K_P\) (shown as \(\ln(H^*/K_P)\) with the ±ε band – the band is new here).
+        <b>Pulse criterion:</b> sign of \(J_{HM}=\partial\dot H/\partial M\) at equilibrium,
+        $$J_{HM}=\left.\frac{\partial \dot H}{\partial M}\right|_* = H^*\left[\frac{r\gamma H^*}{(K_P+\gamma M^*)^2}-a_M\right],$$
+        equivalent to the equilibrium lying below (mutualism) or above (parasitism) the vertex of the host isocline,
+        \(\big(K_P/2+\gamma r/4a_M+a_MK_P^2/4r\gamma,\; r/2a_M-K_P/2\gamma\big)\). Since the equilibrium lies on the host isocline, both criteria reduce to exact rules for \(M^*\):
+        $$\text{pulse-mutualistic}\iff M^*<\frac{r}{2a_M}-\frac{K_P}{2\gamma},\qquad \text{equilibrium-mutualistic}\ (H^*>K_P)\iff M^*<\frac{r}{a_M}-\frac{K_P}{\gamma}.$$
+        The second bound is twice the first, so along a fertility gradient the pulse criterion always switches first (at defaults: pulse at K<sub>P</sub> ≈ 3.62, equilibrium at K<sub>P</sub> ≈ 13.53; marked in the strip plot).
+        \(K_P>\gamma r/a_M\) (vertex below \(M=0\)) is only a sufficient bound: beyond it both criteria are always parasitic.
+        The two criteria can disagree (paper Fig. 1, isocline 2).</p>
+      <p class="k">Defaults: γ = 5, r = 2, a<sub>M</sub> = 0.3, b<sub>M</sub> = 3 from the paper’s examples; d<sub>M</sub> = 1 and e<sub>M</sub> = 10 are placeholders (the paper’s tables use d = e = 1, available as a preset; with e<sub>M</sub> = 1 the pulse criterion is parasitic for every K<sub>P</sub>). Integration: adaptive RK4 (step doubling, rtol 1e-6), interior equilibrium solved analytically (quadratic).
+        <b>Link to soil P (conceptual):</b> K<sub>P</sub> stands in for soil fertility; in tab ① this corresponds to raising soil-available P, S. No quantitative mapping K<sub>P</sub>(S) is implied.</p>
+      <h3 class="howh">③ Cheater fungus</h3>
+      <p>Neuhauser &amp; Fargione (2004), eq. (2)/(A.1), in this app’s notation (paper: \(P\to M\), \(Q\to Z\), \(K\to K_P\), subscripts \(1\to M\), \(2\to Z\), \(c_1\to\alpha_{MZ}\), \(c_2\to\alpha_{ZM}\)): mutualist \(M\) and cheater \(Z\) (no benefit to the host) compete for the host:
+        $$\frac{dH}{dt}=rH\left(1-\frac{H}{K_P+\gamma M}\right)-a_MMH-a_ZZH$$
+        $$\frac{dM}{dt}=b_MHM-d_MM(1+e_MM+\alpha_{MZ}Z),\qquad \frac{dZ}{dt}=b_ZHZ-d_ZZ(1+e_ZZ+\alpha_{ZM}M)$$
+        Competition convention: \(\alpha_{ij}\) = effect of \(j\) on \(i\) (so \(\alpha_{MZ}\), the paper’s \(c_1\), is the effect of the cheater on the mutualist); as in the paper it acts inside the density-dependent death term.
+        The paper assumes \(b_M/d_M>b_Z/d_Z\) (mutualist grows faster). Invasion criteria (App. A.2): \(Z\) invades the mutualist-only equilibrium iff \(\alpha_{ZM}\lt e_Z\lambda_Z^{(M)}/\lambda_M^{(M)}\);
+        \(M\) invades the cheater-only equilibrium iff \(\alpha_{MZ}\lt e_M\lambda_M^{(Z)}/\lambda_Z^{(Z)}\), where \(\lambda_i^{(X)}=\frac{1}{e_i}\big(\frac{b_i}{d_i}\bar H^{(X)}-1\big)\) and \(\bar H^{(X)}\) is the host density at the X-only equilibrium.
+        Increasing \(K_P\) favours the cheater (paper Tables 1–2; the app reproduces Table 2: K<sub>P</sub> = 20 → H = 2.667, Z = 4.333, M = 0).</p>
+      <p class="k"><b>Why the plant can do better when the cheater wins.</b> With the paper’s \(e_M=e_Z=1\) the fungi regulate the host from above: \(H^*\) lies on a fungal isocline, \(H^*=\frac{d_i}{b_i}(1+e_iX_i+\dots)\), so it barely depends on \(K_P\) (≈ 2.4–2.8 for K<sub>P</sub> = 2–40).
+        The mutualist alone is then itself parasitic for K<sub>P</sub> ≳ 2.4, and because it is the more efficient grower (\(b_M/d_M>b_Z/d_Z\)) it holds the host lower than the cheater does: at K<sub>P</sub> = 20, H = 2.667 with Z alone vs 2.450 with M alone.
+        “Mutualist” and “cheater” refer to \(\gamma\), not to the realised effect; the readouts and the K<sub>P</sub> plot show the M-only reference for comparison.
+        The preset “plant-limited” (\(e_M=e_Z=10\), as in tab ②, with \(\alpha_{MZ},\alpha_{ZM}\) scaled by the same factor) gives the intuitive picture: the cheater wins in fertile soil and the plant is worse off than with M alone.
+        <b>Bistability:</b> the K<sub>P</sub> sweep uses one set of initial densities; the optional invasion sweep (dashed, top strip) starts at the M-only equilibrium with rare Z. Where the two differ, the outcome depends on starting densities (e.g. paper Table 2 at K<sub>P</sub> = 2: Z cannot invade M alone, yet a coexistence state is also stable).</p>
+      <p class="k"><b>New here:</b> optional cheater benefit \(\gamma_Z\) (host capacity \(K_P+\gamma M+\gamma_ZZ\); \(\gamma_Z=0\) is the paper);
+        the time-resolved plant response \(\ln(H/H_{NM})\) with \(H_{NM}\) logistic; and a bridge to tab ①: with colonisation split by abundance,
+        \(\phi_{mix}=\frac{M}{M+Z}\phi+\frac{Z}{M+Z}\phi_Z\) is fed into the static MGR. Note: Tables 1–2 use α<sub>ZM</sub> = 0.6128, just above the K<sub>P</sub> = 2 invasion threshold 0.6127 (rising to ≈ 0.617 as K<sub>P</sub> → ∞), so convergence there is very slow.</p>
+      <h3 class="howh">④ Plant sanctions</h3>
+      <p>Inspired by reciprocal rewards (Kiers et al. 2011), partner choice in biological markets and proportional rewards (Wyatt et al. 2014), as summarised by Hammerstein &amp; Noë (2016); not a model from any of the five papers.
+        The plant scales the carbon each fungus receives per unit abundance by a reward weight
+        $$w_i=(1-s)+s\,\frac{q_i}{\bar q},\qquad q_M=\gamma+q_0,\quad q_Z=\gamma_Z+q_0,\qquad \bar q=\frac{Mq_M+Zq_Z}{M+Z},$$
+        so that \(Mw_M+Zw_Z=M+Z\): sanctions redistribute the reward per unit fungus without changing its total.
+        The host’s actual carbon drain \((a_Mw_MM+a_Zw_ZZ)H\) is not conserved, because \(a_M\ne a_Z\): shifting reward to the cheaper mutualist lowers it (at the demo values to about 0.95–0.999 of the equal-reward drain; shown in the readout), so part of the plant’s gain from sanctions is a cheaper partner mix. \(s=0\): no discrimination; \(s=1\): reward proportional to benefit delivered (plus baseline \(q_0\), which also reflects how well the plant can tell partners apart).
+        Carbon taken and fungal growth both scale with \(w_i\):
+        $$\dot H=rH\Big(1-\tfrac{H}{K_P+\gamma M+\gamma_ZZ}\Big)-a_Mw_MMH-a_Zw_ZZH,$$
+        $$\dot M=b_Mw_MHM-d_MM(1+e_MM+\alpha_{MZ}Z),\qquad \dot Z=b_Zw_ZHZ-d_ZZ(1+e_ZZ+\alpha_{ZM}M).$$
+        With a single fungus \(w=1\), so sanctions only act when partners compete. Demo values α<sub>MZ</sub> = 2.0, α<sub>ZM</sub> = 0.3 are placeholders chosen so that the cheater robustly wins at high K<sub>P</sub> without sanctions (with the paper’s knife-edge α<sub>ZM</sub> = 0.6128 almost any s &gt; 0 flips the outcome).</p>
+
+
+      <h3 class="howh">⑤ Parameter space</h3>
+      <p>A precomputed Latin-hypercube sample over each tab’s slider ranges (10<sup>5</sup> sets for ① and ②; 4·10<sup>4</sup> for ③ and ④; seed 20261104).
+        Rates, costs, yields and half-saturations are log-uniform; fractions, soil P / fertility, γ, α and s are uniform.
+        Each set is classified with the same rules as the corresponding tab (MGR ±ε in ①; ln(H*/K<sub>P</sub>) ±ε or the pulse sign of J<sub>HM</sub> in ②;
+        plant response, or who wins, in ③ and ④). The shares are the fraction of those sets in each class.</p>
+      <p><b>No live sampling.</b> The app ships integer counts, binned on a grid: 10 bins per axis, 10 fertility bins, 5 light bins (① only),
+        stored for each pair among at most eight parameters per view (fertility, light in ①, and the parameters with highest importance).
+        Conditioning on a fertility (or light) band sums the bins whose intervals overlap the selected range. Cells with fewer than 15 samples are greyed out.</p>
+      <p><b>Phase map.</b> The default view colours each cell by its majority class (paler = lower majority share).
+        Choose a single class to colour every cell by that class's share (0–100%) on a sequential scale in the class colour
+        (green = mutualism / mutualist, grey = commensalism, red = parasitism / cheater, dark grey = cannot persist / no fungus, amber = coexistence).
+        Hover shows the share and the sample count <i>n</i>. Cells with fewer than 15 samples stay grey.</p>
+      <p><b>Caveat.</b> The percentages describe the slider box in placeholder units; they are not frequencies in nature and they change if the ranges or the sampling scale change.
+        Variable importance is random-forest permutation importance on the same sample (top parameter = 1).</p>
+      <p><b>Credits (conceptual sources)</b></p>
+      <ul>
+        <li><b>Neuhauser &amp; Fargione (2004)</b>, <i>Ecol. Model.</i> 177: 337–352 — host–symbiont model with both benefit and cost; rising soil fertility turns mutualism into parasitism.</li>
+        <li><b>Hochberg, Gomulkiewicz, Holt &amp; Thompson (2000)</b>, <i>J. Evol. Biol.</i> 13: 213–222 — habitat productivity gradients: mutualists favoured in poor/sink habitats, virulent symbionts in productive ones.</li>
+        <li><b>Schwartz &amp; Hoeksema (1998)</b>, <i>Ecology</i> 79: 1029–1038 — biological-market / comparative-advantage view; trade is mutualistic only inside a window of exchange rates; P fertilisation shrinks gains.</li>
+        <li><b>Grasso, Ryan, Albornoz &amp; Renton (2025)</b>, <i>New Phytol.</i> 248: 1429–1441 — Liebig co-limitation and one-to-one C-for-P trade; giving C is costly only when C limits growth.</li>
+        <li><b>Hammerstein &amp; Noë (2016)</b>, <i>Phil. Trans. R. Soc. B</i> 371: 20150101 — biological trade and markets: partner choice, sanctions, exchange rates.</li>
+      </ul>
+    </div>
+  </details>

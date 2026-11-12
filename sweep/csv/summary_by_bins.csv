@@ -1,0 +1,154 @@
+bin,class,n,pct,design,binvar
+"[0.5,2)",mutualism,282,11.2,tab1,S
+"[0.5,2)",commensalism,544,21.6,tab1,S
+"[0.5,2)",parasitism,1695,67.2,tab1,S
+"[2,5)",mutualism,499,9.9,tab1,S
+"[2,5)",commensalism,1206,23.9,tab1,S
+"[2,5)",parasitism,3337,66.2,tab1,S
+"[5,10)",mutualism,603,7.2,tab1,S
+"[5,10)",commensalism,2175,25.9,tab1,S
+"[5,10)",parasitism,5625,66.9,tab1,S
+"[10,20)",mutualism,736,4.4,tab1,S
+"[10,20)",commensalism,4679,27.8,tab1,S
+"[10,20)",parasitism,11392,67.8,tab1,S
+"[20,40)",mutualism,798,2.4,tab1,S
+"[20,40)",commensalism,9515,28.3,tab1,S
+"[20,40)",parasitism,23300,69.3,tab1,S
+"[40,60]",mutualism,600,1.8,tab1,S
+"[40,60]",commensalism,9442,28.1,tab1,S
+"[40,60]",parasitism,23572,70.1,tab1,S
+"[0.1,0.3)",mutualism,271,1.2,tab1,L
+"[0.1,0.3)",commensalism,6216,28,tab1,L
+"[0.1,0.3)",parasitism,15735,70.8,tab1,L
+"[0.3,0.5)",mutualism,597,2.7,tab1,L
+"[0.3,0.5)",commensalism,6165,27.7,tab1,L
+"[0.3,0.5)",parasitism,15460,69.6,tab1,L
+"[0.5,0.7)",mutualism,858,3.9,tab1,L
+"[0.5,0.7)",commensalism,6142,27.6,tab1,L
+"[0.5,0.7)",parasitism,15223,68.5,tab1,L
+"[0.7,0.9)",mutualism,1156,5.2,tab1,L
+"[0.7,0.9)",commensalism,6009,27,tab1,L
+"[0.7,0.9)",parasitism,15057,67.8,tab1,L
+"[0.9,1]",mutualism,636,5.7,tab1,L
+"[0.9,1]",commensalism,3029,27.3,tab1,L
+"[0.9,1]",parasitism,7446,67,tab1,L
+"[0.5,2)",mutualism,1120,44.4,tab2_eq,K
+"[0.5,2)",commensalism,116,4.6,tab2_eq,K
+"[0.5,2)",parasitism,763,30.3,tab2_eq,K
+"[0.5,2)",cannot persist,522,20.7,tab2_eq,K
+"[2,5)",mutualism,1865,37,tab2_eq,K
+"[2,5)",commensalism,281,5.6,tab2_eq,K
+"[2,5)",parasitism,2758,54.7,tab2_eq,K
+"[2,5)",cannot persist,138,2.7,tab2_eq,K
+"[5,10)",mutualism,2092,24.9,tab2_eq,K
+"[5,10)",commensalism,348,4.1,tab2_eq,K
+"[5,10)",parasitism,5962,71,tab2_eq,K
+"[5,10)",cannot persist,1,0,tab2_eq,K
+"[10,20)",mutualism,2280,13.6,tab2_eq,K
+"[10,20)",commensalism,535,3.2,tab2_eq,K
+"[10,20)",parasitism,13992,83.3,tab2_eq,K
+"[20,40)",mutualism,2330,6.9,tab2_eq,K
+"[20,40)",commensalism,699,2.1,tab2_eq,K
+"[20,40)",parasitism,30584,91,tab2_eq,K
+"[40,60]",mutualism,1216,3.6,tab2_eq,K
+"[40,60]",commensalism,472,1.4,tab2_eq,K
+"[40,60]",parasitism,31926,95,tab2_eq,K
+"[0.2,0.5)",mutualism,680,2.4,tab2_eq,r
+"[0.2,0.5)",commensalism,323,1.1,tab2_eq,r
+"[0.2,0.5)",parasitism,27278,95.8,tab2_eq,r
+"[0.2,0.5)",cannot persist,185,0.6,tab2_eq,r
+"[0.5,1)",mutualism,1273,5.9,tab2_eq,r
+"[0.5,1)",commensalism,389,1.8,tab2_eq,r
+"[0.5,1)",parasitism,19718,91.6,tab2_eq,r
+"[0.5,1)",cannot persist,154,0.7,tab2_eq,r
+"[1,2)",mutualism,2513,11.7,tab2_eq,r
+"[1,2)",commensalism,638,3,tab2_eq,r
+"[1,2)",parasitism,18252,84.8,tab2_eq,r
+"[1,2)",cannot persist,131,0.6,tab2_eq,r
+"[2,5]",mutualism,6437,22.6,tab2_eq,r
+"[2,5]",commensalism,1101,3.9,tab2_eq,r
+"[2,5]",parasitism,20737,72.8,tab2_eq,r
+"[2,5]",cannot persist,191,0.7,tab2_eq,r
+"[0.5,2)",mutualism,333,13.2,tab2_pulse,K
+"[0.5,2)",parasitism,1666,66.1,tab2_pulse,K
+"[0.5,2)",cannot persist,522,20.7,tab2_pulse,K
+"[2,5)",mutualism,739,14.7,tab2_pulse,K
+"[2,5)",parasitism,4165,82.6,tab2_pulse,K
+"[2,5)",cannot persist,138,2.7,tab2_pulse,K
+"[5,10)",mutualism,848,10.1,tab2_pulse,K
+"[5,10)",parasitism,7554,89.9,tab2_pulse,K
+"[5,10)",cannot persist,1,0,tab2_pulse,K
+"[10,20)",mutualism,976,5.8,tab2_pulse,K
+"[10,20)",parasitism,15831,94.2,tab2_pulse,K
+"[20,40)",mutualism,1062,3.2,tab2_pulse,K
+"[20,40)",parasitism,32551,96.8,tab2_pulse,K
+"[40,60]",mutualism,599,1.8,tab2_pulse,K
+"[40,60]",parasitism,33015,98.2,tab2_pulse,K
+"[0.5,2)",mutualism,699,46,tab3_plant,K
+"[0.5,2)",commensalism,78,5.1,tab3_plant,K
+"[0.5,2)",parasitism,669,44,tab3_plant,K
+"[0.5,2)",no fungus persists,73,4.8,tab3_plant,K
+"[2,5)",mutualism,838,27.6,tab3_plant,K
+"[2,5)",commensalism,109,3.6,tab3_plant,K
+"[2,5)",parasitism,2089,68.8,tab3_plant,K
+"[2,5)",no fungus persists,2,0.1,tab3_plant,K
+"[5,10)",mutualism,774,15.3,tab3_plant,K
+"[5,10)",commensalism,126,2.5,tab3_plant,K
+"[5,10)",parasitism,4163,82.2,tab3_plant,K
+"[10,20)",mutualism,793,7.8,tab3_plant,K
+"[10,20)",commensalism,161,1.6,tab3_plant,K
+"[10,20)",parasitism,9172,90.6,tab3_plant,K
+"[20,40]",mutualism,637,3.1,tab3_plant,K
+"[20,40]",commensalism,197,1,tab3_plant,K
+"[20,40]",parasitism,19420,95.9,tab3_plant,K
+"[0.5,2)",mutualist,729,48,tab3_winner,K
+"[0.5,2)",coexistence,11,0.7,tab3_winner,K
+"[0.5,2)",cheater,706,46.5,tab3_winner,K
+"[0.5,2)",none,73,4.8,tab3_winner,K
+"[2,5)",mutualist,1484,48.8,tab3_winner,K
+"[2,5)",coexistence,38,1.3,tab3_winner,K
+"[2,5)",cheater,1514,49.8,tab3_winner,K
+"[2,5)",none,2,0.1,tab3_winner,K
+"[5,10)",mutualist,2496,49.3,tab3_winner,K
+"[5,10)",coexistence,64,1.3,tab3_winner,K
+"[5,10)",cheater,2503,49.4,tab3_winner,K
+"[10,20)",mutualist,4968,49.1,tab3_winner,K
+"[10,20)",coexistence,105,1,tab3_winner,K
+"[10,20)",cheater,5053,49.9,tab3_winner,K
+"[20,40]",mutualist,10051,49.6,tab3_winner,K
+"[20,40]",coexistence,228,1.1,tab3_winner,K
+"[20,40]",cheater,9975,49.2,tab3_winner,K
+"[0.5,2)",mutualism,726,47.8,tab4_plant,K
+"[0.5,2)",commensalism,60,3.9,tab4_plant,K
+"[0.5,2)",parasitism,653,43,tab4_plant,K
+"[0.5,2)",no fungus persists,80,5.3,tab4_plant,K
+"[2,5)",mutualism,872,28.7,tab4_plant,K
+"[2,5)",commensalism,114,3.8,tab4_plant,K
+"[2,5)",parasitism,2048,67.4,tab4_plant,K
+"[2,5)",no fungus persists,4,0.1,tab4_plant,K
+"[5,10)",mutualism,818,16.2,tab4_plant,K
+"[5,10)",commensalism,108,2.1,tab4_plant,K
+"[5,10)",parasitism,4137,81.7,tab4_plant,K
+"[10,20)",mutualism,877,8.7,tab4_plant,K
+"[10,20)",commensalism,153,1.5,tab4_plant,K
+"[10,20)",parasitism,9096,89.8,tab4_plant,K
+"[20,40]",mutualism,724,3.6,tab4_plant,K
+"[20,40]",commensalism,188,0.9,tab4_plant,K
+"[20,40]",parasitism,19342,95.5,tab4_plant,K
+"[0.5,2)",mutualist,769,50.6,tab4_winner,K
+"[0.5,2)",coexistence,16,1.1,tab4_winner,K
+"[0.5,2)",cheater,654,43.1,tab4_winner,K
+"[0.5,2)",none,80,5.3,tab4_winner,K
+"[2,5)",mutualist,1594,52.5,tab4_winner,K
+"[2,5)",coexistence,37,1.2,tab4_winner,K
+"[2,5)",cheater,1403,46.2,tab4_winner,K
+"[2,5)",none,4,0.1,tab4_winner,K
+"[5,10)",mutualist,2697,53.3,tab4_winner,K
+"[5,10)",coexistence,62,1.2,tab4_winner,K
+"[5,10)",cheater,2304,45.5,tab4_winner,K
+"[10,20)",mutualist,5429,53.6,tab4_winner,K
+"[10,20)",coexistence,109,1.1,tab4_winner,K
+"[10,20)",cheater,4588,45.3,tab4_winner,K
+"[20,40]",mutualist,10683,52.7,tab4_winner,K
+"[20,40]",coexistence,248,1.2,tab4_winner,K
+"[20,40]",cheater,9323,46,tab4_winner,K

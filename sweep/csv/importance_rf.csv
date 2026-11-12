@@ -1,0 +1,88 @@
+design,par,symbol,importance,oob_error
+tab1,c,colonisation c,1,0.0839
+tab1,kappa,C cost κ,0.716,0.0839
+tab1,rho,root suppression ρ,0.058,0.0839
+tab1,theta,θ,0.055,0.0839
+tab1,Y,Y,0.043,0.0839
+tab1,Kr,K_r,0.037,0.0839
+tab1,Amax,A_max,0.037,0.0839
+tab1,S,"soil P, S",0.032,0.0839
+tab1,U0,fungal P need U_0,0.029,0.0839
+tab1,phi,φ,0.028,0.0839
+tab1,L,"light, L",0.019,0.0839
+tab1,Kf,K_f,0.013,0.0839
+tab1,n,n,0.008,0.0839
+tab2_eq,K,fertility K_P,1,0.0495
+tab2_eq,e,e_M,0.909,0.0495
+tab2_eq,r,r,0.818,0.0495
+tab2_eq,a,a_M,0.734,0.0495
+tab2_eq,d,d_M,0.333,0.0495
+tab2_eq,b,b_M,0.27,0.0495
+tab2_eq,g,γ,0.199,0.0495
+tab2_pulse,e,e_M,1,0.0235
+tab2_pulse,K,fertility K_P,0.664,0.0235
+tab2_pulse,d,d_M,0.554,0.0235
+tab2_pulse,r,r,0.513,0.0235
+tab2_pulse,b,b_M,0.459,0.0235
+tab2_pulse,a,a_M,0.447,0.0235
+tab2_pulse,g,γ,0.1,0.0235
+tab3_plant,K,fertility K_P,1,0.0771
+tab3_plant,r,r,0.72,0.0771
+tab3_plant,e1,e_M,0.347,0.0771
+tab3_plant,e2,e_Z,0.253,0.0771
+tab3_plant,a1,a_M,0.221,0.0771
+tab3_plant,a2,a_Z,0.168,0.0771
+tab3_plant,b2,b_Z,0.139,0.0771
+tab3_plant,d2,d_Z,0.138,0.0771
+tab3_plant,d1,d_M,0.11,0.0771
+tab3_plant,b1,b_M,0.097,0.0771
+tab3_plant,g,γ,0.028,0.0771
+tab3_plant,g2,γ_Z,0.025,0.0771
+tab3_plant,c2,α_ZM,0.013,0.0771
+tab3_plant,c1,α_MZ,0.009,0.0771
+tab3_winner,b1,b_M,1,0.0651
+tab3_winner,b2,b_Z,0.975,0.0651
+tab3_winner,d2,d_Z,0.857,0.0651
+tab3_winner,d1,d_M,0.829,0.0651
+tab3_winner,c2,α_ZM,0.241,0.0651
+tab3_winner,c1,α_MZ,0.227,0.0651
+tab3_winner,e1,e_M,0.058,0.0651
+tab3_winner,e2,e_Z,0.055,0.0651
+tab3_winner,r,r,0.009,0.0651
+tab3_winner,K,fertility K_P,0.005,0.0651
+tab3_winner,g2,γ_Z,0.001,0.0651
+tab3_winner,a1,a_M,0,0.0651
+tab3_winner,g,γ,0,0.0651
+tab3_winner,a2,a_Z,0,0.0651
+tab4_plant,K,fertility K_P,1,0.0801
+tab4_plant,r,r,0.73,0.0801
+tab4_plant,e1,e_M,0.401,0.0801
+tab4_plant,a1,a_M,0.26,0.0801
+tab4_plant,e2,e_Z,0.201,0.0801
+tab4_plant,a2,a_Z,0.153,0.0801
+tab4_plant,d2,d_Z,0.123,0.0801
+tab4_plant,b2,b_Z,0.123,0.0801
+tab4_plant,d1,d_M,0.105,0.0801
+tab4_plant,b1,b_M,0.098,0.0801
+tab4_plant,g,γ,0.04,0.0801
+tab4_plant,g2,γ_Z,0.024,0.0801
+tab4_plant,c2,α_ZM,0.017,0.0801
+tab4_plant,c1,α_MZ,0.012,0.0801
+tab4_plant,q0,q_0,-0.001,0.0801
+tab4_plant,s,sanction s,-0.002,0.0801
+tab4_winner,b1,b_M,1,0.0858
+tab4_winner,b2,b_Z,0.979,0.0858
+tab4_winner,d2,d_Z,0.825,0.0858
+tab4_winner,d1,d_M,0.824,0.0858
+tab4_winner,c2,α_ZM,0.24,0.0858
+tab4_winner,c1,α_MZ,0.22,0.0858
+tab4_winner,e1,e_M,0.056,0.0858
+tab4_winner,e2,e_Z,0.054,0.0858
+tab4_winner,g,γ,0.03,0.0858
+tab4_winner,g2,γ_Z,0.013,0.0858
+tab4_winner,s,sanction s,0.011,0.0858
+tab4_winner,K,fertility K_P,0.01,0.0858
+tab4_winner,q0,q_0,0.009,0.0858
+tab4_winner,r,r,0.006,0.0858
+tab4_winner,a2,a_Z,0.001,0.0858
+tab4_winner,a1,a_M,-0.001,0.0858
